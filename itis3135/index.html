@@ -1,1 +1,40 @@
-ITIS_3135 Class Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>ITIS 3135 Class Home Page</title>
+</head>
+<body>
+    <header>
+        <h1>Noah Yarborough's Yellow Yak</h1>
+    </header>
+    
+    <main>
+        <h2>ITIS 3135 Class Home Page</h2>
+    </main>
+    <footer>
+        <nav>
+            <a href="./tables.html">Tables</a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+        <!-- Validation Buttons (HTML & CSS) -->
+        <a id = "validation_link_html">
+            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        <a id = "validation_link_css">
+            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        
+    </footer>
+</body>
+</html>
