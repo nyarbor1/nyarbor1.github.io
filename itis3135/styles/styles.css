@@ -1,3 +1,31 @@
+header {
+    margin-bottom: 10vh;
+}
+
+td + td {
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+tr:nth-child(even) {
+    background-color: #84A98C;
+    color: #2F3E46;
+}
+
+tr:nth-child(odd) {
+    background-color: #CAD2C5;
+    color: #2F3E46;
+}
+
+th {
+    background-color: #2F3E46;
+    color: #CAD2C5;
+}
+
+footer {
+    margin-top: 10vh;
+}
+
 footer a {
     text-decoration: none;
 }
