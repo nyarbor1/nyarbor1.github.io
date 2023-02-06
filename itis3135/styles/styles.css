@@ -1,5 +1,13 @@
+body {
+    margin-left: 1vw;
+}
+
 header {
-    margin-bottom: 10vh;
+    margin-bottom: 3vh;
+}
+
+nav {
+    margin-bottom: 3vh;
 }
 
 td + td {
@@ -23,9 +31,23 @@ th {
 }
 
 footer {
-    margin-top: 10vh;
+    margin-top: 3vh;
 }
 
 footer a {
     text-decoration: none;
 }
+
+figure {
+   text-align: center;
+}
+
+figure table {
+    margin: 2vh auto;
+}
+
+.align-right {
+    text-align: right;
+    padding-right: 1vw;
+}
+
