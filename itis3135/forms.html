@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Forms Example</title> 
+</head>
+<body>
+    <header>
+        <h1>ITIS 3135 - Noah Yarborough</h1>
+    </header>
+    <nav>
+        <a href="../">Noah's Webspace</a> ||
+        <a href="./">ITIS-3135 Class Site</a> || 
+        <a href="./tables.html">Tables</a>
+    </nav>
+    <main>
+       <h2>Activity 3: HTML Forms</h2>
+       <h3>Please fill out this form</h3>
+       
+            <form action="#">
+                <label for="name">Full Name</label><br>
+                <input name="name" type="text" id="name" required><br>
+                <label for="phone">Phone Number</label><br>
+                <input size="10" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                <label for="email">Email Address</label><br>
+                <input id="email" type="email" placeholder="blah@example.com" required><br>
+                <p>What ways do you like to communicate?</p><br>
+                <input type="checkbox" name="reason1" id="reason1">
+                <label for="reason1">Phone Call</label><br>
+                <input type="checkbox" name="reason2" id="reason2">
+                <label for="reason2">Text Message</label><br>
+                <input type="checkbox" name="reason3" id="reason3">
+                <label for="reason3">Email</label><br>
+                <input type="checkbox" name="reason4" id="reason4">
+                <label for="reason4">Messenger Dove</label><br>
+                <p>What is your best favorite programming language among these options?</p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br>
+                <label for="rating">Rate this page 1-4:</label><br>
+                <select name="rating" id="rating">
+                    <option value="1">1</option> 
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+                <input type="reset"><br>
+                <input type="submit"><br>
+            </form>       
+    </main>
+    <footer>
+        <nav>
+            <a href="../">Noah's Webspace</a> ||
+            <a href="./">ITIS-3135 Class Site</a> || 
+            <a href="./tables.html">Tables</a>
+        </nav>
+        <!-- Validation Buttons (HTML & CSS) -->
+        <a id = "validation_link_html">
+            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        <a id = "validation_link_css">
+            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        
+    </footer>
+</body>
+</html>
