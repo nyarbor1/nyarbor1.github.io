@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap');
+
+:root {
+    --headerFont: 'Noto Sans HK', sans-serif;
+}
+
 body {
     margin-left: 1vw;
+    background-color: #A3D5FF;
+}
+
+main, footer {
+    width: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: var(--headerFont);
 }
 
 header {
@@ -42,8 +57,12 @@ figure {
    text-align: center;
 }
 
-figure table {
-    margin: 2vh auto;
+table {
+    margin-top: 2vh;
+}
+
+.center {
+    margin: auto;
 }
 
 .align-right {

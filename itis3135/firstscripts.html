@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>First JavaScripts</title>
+    <script src="scripts/defaultscripts.js"></script>
+</head>
+<body onload="displayDate();">
+    
+    <header>
+        <h1>ITIS 3135 - Noah Yarborough</h1>
+    </header>
+    <nav>
+        <a href="../">Noah's Webspace</a> ||
+        <a href="./">ITIS-3135 Class Site</a> ||
+        <a href="./forms.html">Forms</a> ||
+        <a href="./tables.html">Tables</a>
+    </nav>
+    <main>
+        <h2>Activity #5 - First JavaScripts</h2>
+        <h3 id="date"></h3>
+        <form action="#">
+            <label for="name">What's your name?</label>
+            <input id="name" required type="text" placeholder="Enter name here...">
+            <label for="mood">How are your feeling?</label>
+            <select required name="mood" id="mood">
+                <option value="good">Good</option>
+                <option value="bad">Bad</option>
+                <option value="soso">So-so</option>
+            </select>
+            <br>
+            <button onclick="submitForm(event);">Submit</button>
+        </form>
+        <h3 id="greeting"></h3>
+        <button onclick="yakCall()">Yak Call</button>
+        <button onclick="yakFact()">Yak Fact</button>
+        <button onclick="yakWeight();">Yak Weight</button>
+        <button onclick="yakJoke()">Yak Joke</button>
+        <button onclick="yakPopulation()">Yak Population</button>
+        <h3 id="output"></h3>
+    </main>
+    <footer>
+        <nav>
+            <a href="../">Noah's Webspace</a> ||
+            <a href="./">ITIS-3135 Class Site</a> ||
+            <a href="./forms.html">Forms</a>
+        </nav>
+        <!-- Validation Buttons (HTML & CSS) -->
+        <a id = "validation_link_html">
+            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        <a id = "validation_link_css">
+            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        
+    </footer>
+</body>
+</html>
