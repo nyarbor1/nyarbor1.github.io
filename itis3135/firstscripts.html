@@ -21,12 +21,13 @@
     </nav>
     <main>
         <h2>Activity #5 - First JavaScripts</h2>
-        <h3 id="date"></h3>
+        <h3 id="date">Today's Date</h3>
         <form action="#">
             <label for="name">What's your name?</label>
             <input id="name" required type="text" placeholder="Enter name here...">
             <label for="mood">How are your feeling?</label>
             <select required name="mood" id="mood">
+                <option value="">Choose a mood:</option>
                 <option value="good">Good</option>
                 <option value="bad">Bad</option>
                 <option value="soso">So-so</option>
@@ -34,13 +35,13 @@
             <br>
             <button onclick="submitForm(event);">Submit</button>
         </form>
-        <h3 id="greeting"></h3>
+        <h3 id="greeting">Personalized Greeting will go here after form is complete.</h3>
         <button onclick="yakCall()">Yak Call</button>
         <button onclick="yakFact()">Yak Fact</button>
         <button onclick="yakWeight();">Yak Weight</button>
         <button onclick="yakJoke()">Yak Joke</button>
         <button onclick="yakPopulation()">Yak Population</button>
-        <h3 id="output"></h3>
+        <h3 id="output">Yak facts will populate here.</h3>
     </main>
     <footer>
         <nav>
