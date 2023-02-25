@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Calculator</title>
+</head>
+    <header>
+        <h1>ITIS 3135 - Noah Yarborough</h1>
+    </header>
+    <nav>
+        <a href="../">Noah's Webspace</a> ||
+                <a href="./tables.html">Tables</a> ||
+                <a href="./forms.html">Forms</a> ||
+                <a href="./firstscripts.html">First Scripts</a> ||
+                <a href="./polygons.html">Polygons</a> || 
+                <a href="./calculator_try.html">Calculator</a>
+    </nav>
+    <main>
+        <h2>Activity #7 - Walk Thru A Calculator Build</h2>
+        <div id="calculator">
+            <div class="output">
+                <p id="output"></p>
+            </div>
+            <button id="clear" class="span-two">AC</button>
+            <button id="deleteBtn"><img src="images/backspace-arrow.png"></button>
+            <button class="operator" value="/"><img src="images/divide.png"></button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator" value="*"><img src="images/close.png "></button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator plus" value="+"><img src="images/add.png"></button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator" value="-"><img src="images/subtract.png"></button>
+            <button class="number">.</button>
+            <button class="number">0</button>
+            <button id="equals" class="span-two"><img src="images/equal-mathematical-sign.png"></button>
+
+        </div>       
+    </main>
+    <footer>
+        <nav>
+            <a href="../">Noah's Webspace</a> ||
+                <a href="./tables.html">Tables</a> ||
+                <a href="./forms.html">Forms</a> ||
+                <a href="./firstscripts.html">First Scripts</a> ||
+                <a href="./polygons.html">Polygons</a> || 
+                <a href="./calculator_try.html">Calculator</a>
+        </nav>
+        <!-- Validation Buttons (HTML & CSS) -->
+        <a id = "validation_link_html">
+            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        <a id = "validation_link_css">
+            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        
+    </footer>
+    <script src="scripts/calculator_try.js"></script>
+</body>
+</html>

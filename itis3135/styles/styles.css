@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Noto+Sans+HK:wght@100&display=swap');
 :root {
     --headerFont: 'Noto Sans HK', sans-serif;
 }
@@ -86,4 +86,75 @@ input, select {
 input[type="submit"], input[type="reset"] {
     background: #7FB069;
     color: white;
+}
+
+#calculator {
+    font-family: 'Heebo', sans-serif;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+#calculator > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    height: 100%;
+
+ }
+
+#calculator > button:hover {
+    background-color: rgba(255, 255, 255, .9); 
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    color: ivory;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#output {
+    margin: 0 1vw;
+}
+
+#deleteBtn img, .operator img{
+    height: auto;
+    max-width: 50%;
+}
+
+#equals img {
+    height: auto;
+    max-width: 25%;
+}
+
+#calculator > #equals, #calculator > #clear {
+    background-color: red;
+    opacity: 75%;    
+}
+
+#calculator > #equals > img{
+    /* background-color: red; */
+    opacity: none
+}
+
+#clear {
+    font-weight: bold;
 }
