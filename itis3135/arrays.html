@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Calculator</title>
 </head>
-    <header>
-        <h1>ITIS 3135 - Noah Yarborough</h1>
+<body>
+    <script src="./scripts/arrays.js"></script>
+
+    <h1>ITIS 3135 - Noah Yarborough</h1>
     </header>
     <nav>
         <a href="../">Noah's Webspace</a> ||
@@ -19,37 +21,37 @@
                 <a href="./calculator_try.html">Calculator</a>
     </nav>
     <main>
-        <h2>Activity #7 - Walk Thru A Calculator Build</h2>
-        <div id="calculator">
-            <div class="output">
-                <p id="output"></p>
-            </div>
-            <button id="clear" class="span-two">AC</button>
-            <button id="deleteBtn"><img src="images/backspace-arrow.png"></button>
-            <button class="operator" value="/"><img src="images/divide.png"></button>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="operator" value="*"><img src="images/close.png "></button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="operator plus" value="+"><img src="images/add.png"></button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="operator" value="-"><img src="images/subtract.png"></button>
-            <button class="number">.</button>
-            <button class="number">0</button>
-            <button id="equals" class="span-two"><img src="images/equal-mathematical-sign.png" alt="plus sign"></button>
-
-        </div>       
+        <h2>Activity #8 - Arrays</h2>
+        <div class="content">
+            <label for="employeeName">Name:</label>
+            <input id="employeeName" type="text">
+            <label for="employeeSalary">Salary:</label>
+            <input id="employeeSalary" type="number">
+            <button id="addSalary" onclick="addSalary()">
+                Add Salary
+            </button>
+            <button id="displayResults" onclick="displayResults()">
+                Display Results
+            </button>
+            <button id="displaySalary" onclick="displaySalary()">
+                Display Salary
+            </button>
+            <select name="employees" id="employees">
+                <option value="Reece">Reece</option>
+                <option value="David">David</option>
+                <option value="Sherry">Sherry</option>
+                <option value="Kevin">Kevin</option>
+                <option value="Sam">Sam</option>
+                <option value="Dylan">Dylan</option>
+            </select>
+            <div id="results"></div>
+        </div>
     </main>
     <footer>
         <nav>
             <a href="../">Noah's Webspace</a> ||
                 <a href="./tables.html">Tables</a> ||
-                <a href="./forms.html">Forms</a> ||
+                <a href="./forms.html">Forms</a> || 
                 <a href="./firstscripts.html">First Scripts</a> ||
                 <a href="./polygons.html">Polygons</a> || 
                 <a href="./calculator_try.html">Calculator</a>
@@ -62,6 +64,7 @@
             <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
         </a>
 
+        
         <script>
             document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
@@ -70,4 +73,4 @@
     </footer>
     <script src="scripts/calculator_try.js"></script>
 </body>
-</html>
+</html>d

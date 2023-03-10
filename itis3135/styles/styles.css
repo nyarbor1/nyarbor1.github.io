@@ -158,3 +158,11 @@ input[type="submit"], input[type="reset"] {
 #clear {
     font-weight: bold;
 }
+
+.content input, .content button {
+    display: block;
+}
+
+.content button, .content select {
+    margin-top: 2vh;
+}
