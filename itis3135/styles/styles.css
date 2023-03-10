@@ -166,3 +166,6 @@ input[type="submit"], input[type="reset"] {
 .content button, .content select {
     margin-top: 2vh;
 }
+.white {
+    color: rgb(219, 213, 213);
+}
