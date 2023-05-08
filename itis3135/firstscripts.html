@@ -6,19 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>First JavaScripts</title>
-    <script src="scripts/defaultscripts.js"></script>
 </head>
 <body onload="displayDate();">
     
-    <header>
+    <header id="header">
         <h1>ITIS 3135 - Noah Yarborough</h1>
     </header>
-    <nav>
-        <a href="../">Noah's Webspace</a> ||
-        <a href="./">ITIS-3135 Class Site</a> ||
-        <a href="./forms.html">Forms</a> ||
-        <a href="./tables.html">Tables</a>
-    </nav>
+    
     <main>
         <h2>Activity #5 - First JavaScripts</h2>
         <h3 id="date">Today's Date</h3>
@@ -43,12 +37,7 @@
         <button onclick="yakPopulation()">Yak Population</button>
         <h3 id="output">Yak facts will populate here.</h3>
     </main>
-    <footer>
-        <nav>
-            <a href="../">Noah's Webspace</a> ||
-            <a href="./">ITIS-3135 Class Site</a> ||
-            <a href="./forms.html">Forms</a>
-        </nav>
+    <footer id="footer">
         <!-- Validation Buttons (HTML & CSS) -->
         <a id = "validation_link_html">
             <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
@@ -63,5 +52,7 @@
         </script>
         
     </footer>
+    <script src="./scripts/loadMenu.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
 </body>
 </html>

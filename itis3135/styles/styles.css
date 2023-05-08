@@ -208,3 +208,26 @@ input[type="submit"], input[type="reset"] {
 li, p {
     text-align: left;
 }
+
+nav a {
+    margin-right: 1em;
+    text-decoration: none;
+    color: #696969;
+}
+
+
+nav a:hover {
+    color: #303030;
+}
+
+nav a:active {
+    color: ivory;
+}
+
+#arrayshtml {
+    text-align: left;
+}
+
+#formss {
+    text-align: left;
+}
