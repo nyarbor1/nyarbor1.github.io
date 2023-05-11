@@ -93,6 +93,14 @@ window.onload = () => {
     website_evaluations2.href = "./website_evaluations.html";
     website_evaluations2.textContent = "Website Evaluations";
 
+    const project = document.createElement("a");
+    project.href = "./project_1.html";
+    project.textContent = "Project 1"; 
+
+    const project2 = document.createElement("a");
+    project2.href = "./project_1.html";
+    project2.textContent = "Project 1"; 
+
     // Add nav items to nav
     nav.append(index);
     nav.append(tables);
@@ -105,6 +113,7 @@ window.onload = () => {
     nav.append(slideshow);
     nav.append(contract);
     nav.append(website_evaluations);
+    nav.append(project);
 
     nav2.append(index2);
     nav2.append(tables2);
@@ -117,6 +126,8 @@ window.onload = () => {
     nav2.append(slideshow2);
     nav2.append(contract2);
     nav2.append(website_evaluations2);
+    nav2.append(project2);
+
 
 
     let header = document.getElementById('header');

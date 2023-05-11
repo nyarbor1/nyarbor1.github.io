@@ -231,3 +231,42 @@ nav a:active {
 #formss {
     text-align: left;
 }
+
+#requirements {
+    margin: 0;
+    margin-left: 7vw;
+    text-align: left;
+}
+
+#requirements h4 span {
+    font-weight: normal;
+}
+
+#requirements figure img {
+    width: 15vw;
+}
+
+
+#requirements figure img.larger {
+    width: 40vw;
+}
+
+#requirements a {
+    text-decoration: none;
+    color: rgb(35, 75, 12)
+}
+
+#requirements a:hover {
+    text-decoration: none;
+    color: ivory;
+}
+
+#requirements ul {
+    list-style-type: none;
+}
+
+#requirements ul li {
+    border: solid 2px black;
+    margin-top: 1vh;
+    padding: 1em;
+}
