@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Hobby</title>
+    <style>
+        body {
+            background-color: rgb(155, 196, 227);
+            text-align: center;
+        }
+        
+        section {
+            width: 80%;
+        }
+        img {
+            margin: 0 auto;
+        }
+        ol {
+            text-align: center;
+            vertical-align: middle;
+        }         
+
+        li img {
+            width: 300px;
+            height: 200px;
+            
+        }
+
+        #target_species {
+            float: left
+        }
+
+        .personal-photo {
+            width: 500px;
+        }
+
+        .start-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <header id="header">
+    <h1>Hobby Site</h1>
+    <nav>
+        <a data-id="best_catches" onclick="hideOthers(event)">
+            Best Catches
+        </a>
+        <a data-id="home" onclick="hideOthers(event)">
+            Home
+        </a>
+        <a data-id="target_species" onclick="hideOthers(event)">
+            Target Species
+        </a>
+        <a data-id="destinations" onclick="hideOthers(event)">
+            Destinations
+        </a>
+        <a data-id="baits" onclick="hideOthers(event)">
+            Baits
+        </a>
+
+    </nav>
+    </header>
+    <main id="arrayshtml">
+       <section class="start-hidden" id="best_catches">
+        <h2>My Best Catches</h2>
+        <figure>
+            <img class="personal-photo" src="./myBass.PNG" alt="A bass I caught">
+            <figcaption>Largemouth Bass</figcaption>
+            <p>This Bass was caught in Lake Norman with an earthworm on a bottom rig. Pretty unusual way to catch a bass!</p>
+        </figure>
+        <figure>
+            <img class="personal-photo" src="./myCatfish.jpg" alt="A catfish I caught">
+            <figcaption>Flathead Catfish</figcaption>
+            <p>This catfish was caught in about 4 feet of water. There are some giants in the shallow creeks around Raleigh, North Carolina.</p>
+        </figure>
+        <figure>
+            <img class="personal-photo" src="./myTuna.PNG" alt="A tuna I caught">
+            <figcaption>Blackfin Tuna</figcaption>
+            <p>This Blackfin Tuna was caught off the coast of Aruba. Only fish of the day, but it was a once in a lifetime trip!</p>
+        </figure>
+       </section>
+       <section id="home">
+        <h2>Home</h2>
+        <figure>
+            <img  src="./home.jpg" alt="Surf Fishing with incredible view">
+            <figcaption>All About Fishing in North Carolina</figcaption>
+            <p>Discover all you want to know about the different species of fish in North Carolina. Learn what to use to catch a lot of fish and where to drop your rod in!</p>
+        </figure>
+       </section>
+       <section class="start-hidden" id="target_species">
+        <h2>Best Species to Target in North Carolina</h2>
+        <figure>
+            <img src="./redfish.jpg" alt="Redfish">
+            <figcaption>1) Red Drum</figcaption>
+        </figure>
+        <figure>
+            <img src="./flounder.jpg" alt="Flounder">
+            <figcaption>2) Flounder</figcaption>
+        </figure>
+        <figure>
+            <img src="./tuna.jpg" alt="Yellowfin Tuna">
+            <figcaption>3) Yellowfin Tuna</figcaption>
+        </figure>
+        <figure>
+            <img src="./spanish_mackerel.jpg" alt="Spanish Mackerel">
+            <figcaption>4) Spanish Mackerel</figcaption>
+        </figure>
+        <figure>
+            <img src="./brown_trout.jpg" alt="Brown Trout">
+            <figcaption>5) Brown Trout (Weakfish)</figcaption>
+        </figure>
+            </li>
+       </section>
+       <section class="start-hidden" id="destinations">
+        <h2>Top North Carolina Fishing Destinations</h2>
+        <p>The best place to fish in North Carolina is Cape Hatteras. Access to the Outer Banks is what makes this a top fishing destination on the East Coast. A quick trip to the gulf stream and it will be the sportfishing event of a lifetime!</p>
+        <img src="./hatteras.jpg" alt="Cape Hatteras shore fishing">
+        <p>Topsail Beach also has an abundance of fish species and is a much easier drive for North Caroina residents that want to condense their fishing into a day trip.</p>
+        <img src="./topsail.jpg" alt="Jolly Roger Pier in Topsail Beach">
+    </section>
+       <section class="start-hidden" id="baits">
+        <h2>Favorite Baits for Saltwater</h2>
+        <figure>
+            <img src="./shrimp.jpg" alt="Bag of shrimp bait">
+            <figcaption>Shrimp</figcaption>
+            <p>This bait will catch anything from Flounder to Tiger Sharks! Attracts all kinds of fish.</p>
+        </figure>
+        <figure>
+            <img src="./cut_bait.jpg" alt="Fish chopped into cut bait">
+            <figcaption>Cut Bait</figcaption>
+            <p>Cut bait is another good universal bait. Anything fish that eats other fish will love this snack.</p>
+        </figure>
+        <figure>
+            <img src="./live_bait.jpg" alt="Live Fish rigged as bait">
+            <figcaption>Live Bait</figcaption>
+            <p>Not every species will be willing to attack a live bait, but if they do, be ready for a fight! You have a predatory fish on the end of your line.</p>
+        </figure>
+       </section>
+    </main>
+    <footer id="footer">
+        <!-- Validation Buttons (HTML & CSS) -->
+        <a id = "validation_link_html">
+            <img src="../images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        <a id = "validation_link_css">
+            <img src="../images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+
+        
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script>
+            
+            const hideOthers = (event) => {
+                let sections = document.getElementsByTagName("section");
+                for(let i = 0; i < sections.length; i++) {
+                    if(sections[i].id == event.target.dataset.id) {
+                        sections[i].style.display = "block";
+                    } else {
+                        sections[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+        
+    </footer>
+</body>
+</html>
