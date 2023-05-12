@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Review 1</title>
+</head>
+    <header id="header">
+        <h1>ITIS 3135 - Noah Yarborough</h1>
+    </header>
+    <main id="review1">
+        <h2>Review 1 - pbaile20</h2>
+        <figure>
+            <img src="./images/review_screenshot1.png" alt="Screenshot of Payne's Website">
+            <figcaption>
+                <a target="_blank" href="https://webpages.charlotte.edu/pbaile20/itis3135/project_1.html">Payne's Project</a>
+            </figcaption>
+        </figure>
+        <ol>
+            <li>Does submission lead right to page to be reviewed? Yes</li>
+            <li>Are there no spaces or upper-cases in the file/folder names, including scripts, images, etc? They did a good job of keeping the correct casing throughout their file structure.</li>
+            <li>Meet CRAP principles? Personally, I love the design of this page. It is simple and effective. Follows CRUD principles.</li>
+            <li>Header, Main, Footer? Yes, the site is broken into header, main, and footer visually as well as in the code.</li>
+            <li>Header for site is h1? Yes the sites main heading is an h1.</li>
+            <li>Main starts with h2? No, main doesnt always start with h2.</li>
+            <li>Page has brand tagline somewhere? Yes, it is in the footer.</li>
+            <li>Footer with navigation and validation for html/css? Navigation and Validation done properly in the footer.</li>
+        </ol>   
+    </main>
+    <footer id="footer">
+        <!-- Validation Buttons (HTML & CSS) -->
+        <a id = "validation_link_html">
+            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        <a id = "validation_link_css">
+            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        
+    </footer>
+    <script src="./scripts/loadMenu.js"></script>
+</body>
+</html>

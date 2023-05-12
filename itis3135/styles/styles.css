@@ -270,3 +270,7 @@ nav a:active {
     margin-top: 1vh;
     padding: 1em;
 }
+
+#review1 figure img, #review2 figure img {
+    width: 40vw;
+}

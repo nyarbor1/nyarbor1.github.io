@@ -202,3 +202,10 @@ footer {
     width: 79%;
 }
 
+#builds .build .row {
+    height: 10vh;
+}
+
+#builds .build .row p {
+    margin-top: 3vh;
+}
