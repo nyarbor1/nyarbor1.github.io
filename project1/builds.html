@@ -105,6 +105,16 @@
             <a href="../project1/builds.html">Builds</a>
             <a href="../project1/self-improvement.html">Self-Improvement</a>
         </nav>
+        <a id ="validation_link_html">
+            <img src="../project1/imgs/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        <a id = "validation_link_css">
+            <img src="../project1/imgs/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
     </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
 </html>
